@@ -2,17 +2,82 @@
 <html>
     <head>
       <title>Wil's Dope Website</title>
+      <style>
+        body {
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdb4Xt5jofPhQqW1GMYlKxQna0ZmPUvVmWvPVNCS7ac71_zLjp4oMRatJFR6FyxLabCo8:https://m.media-amazon.com/images/I/81EYtj8oi3L._SL1500_.jpg&usqp=CAU");
+            color: purple;
+            padding: 10px;
+            font-family: arial;
+        }
+        #all-contents {
+          max-width: 800px;
+            margin: auto;
+        }
+     
+        /* navigation menu */
+        nav {
+            background: rgb(216, 41, 239);
+           margin-bottom: 20px;
+            display: flex;
+            padding: 10px;
+        }
+        h1 {
+            display: flex;
+            align-items: center;
+            color: white;
+            flex: 1;
+            margin: 0;
+        }
+        #nav-ul {
+            list-style-image: none;
+        }
+        .nav-li {
+            display: inline-block;
+            padding: 0 10px;
+        }
+        a {
+            text-decoration: none;
+            color: #fff;
+        }
+     
+        /* main container area beneath menu */
+        main {
+            background: rgb(245, 238, 219);
+            display: flex;
+        }
+        .sidebar {
+            margin-right: 25px;
+            padding: 10px;
+        }
+        .sidebar-img {
+            width: 200px;
+            border: rgb(243, 235, 235);
+            border-radius: 30px;
+        }
+        .content {
+            flex: 1;
+            padding: 15px;
+        }
+        #interests {
+            border: 4px silver ridge;
+            padding: 8px;
+        }
+        h2, h3 {
+            margin: 0px;
+        }
+     </style>
     </head>
     
     <body>
-        <div>
+        <!--All Content Goes Here -->
+        <div id="all-contents">
             <nav>
                 <h1>Wil's Dope Website</h1>
-                  <ul>
-                      <li>
+                  <ul id="nav-ul">
+                      <li class="nav-li">
                         <a href="index.html"> Home </a>
                       </li>
-                      <li>
+                      <li class="nav-li">
                         <a href="portfolio.html"> Portfolio </a>
                       </li>
                   </ul>
@@ -20,15 +85,15 @@
             </nav>
             <main>
               <!--Sidebar section-->
-              <div>
-                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbIbqvIw1RUShX0X98hmvcrmZBQkZ_9jm6laizP608cG90q48mU4js9zWLUPMruVsALks:https://media.istockphoto.com/photos/excited-old-man-listening-to-music-picture-id477829732&usqp=CAU">
+              <div class="sidebar">
+                  <img class="sidebar-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbIbqvIw1RUShX0X98hmvcrmZBQkZ_9jm6laizP608cG90q48mU4js9zWLUPMruVsALks:https://media.istockphoto.com/photos/excited-old-man-listening-to-music-picture-id477829732&usqp=CAU">
               </div>
               <!--Content Section-->
-              <div>
+              <div class="content">
                   <h2>Wil Gegenheimer</h2>
                     <p>Student at Mandeville High</p>
                     <!--Interests Section-->
-                    <div>
+                    <div id="interests">
                       <h3>Interests</h3>
                         <ul>
                             <li>Playing Video Games</li>
